@@ -28,16 +28,16 @@ public class Game {
 
     public Game() {}
 
-    public Game(Long id, String title, Integer year, String genre, String platforms, Double score, String imgUrl, String shortDescription, String longDescription) {
-        this.id = id;
-        this.title = title;
-        this.year = year;
-        this.genre = genre;
-        this.platforms = platforms;
-        this.score = score;
-        this.imgUrl = imgUrl;
-        this.shortDescription = shortDescription;
-        this.longDescription = longDescription;
+    public Game(Game entity) {
+        id = entity.getId();
+        title = entity.title;
+        year = entity.year;
+        genre = entity.genre;
+        platforms = entity.platforms;
+        score = entity.score;
+        imgUrl = entity.imgUrl;
+        shortDescription = entity.shortDescription;
+        longDescription = entity.longDescription;
     }
 
     public Long getId() {
